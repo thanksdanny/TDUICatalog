@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		FD3791BC1CC3CE29009B066C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791BB1CC3CE29009B066C /* main.m */; };
 		FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791BE1CC3CE29009B066C /* AppDelegate.m */; };
-		FD3791C21CC3CE29009B066C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791C11CC3CE29009B066C /* ViewController.m */; };
 		FD3791C51CC3CE29009B066C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C31CC3CE29009B066C /* Main.storyboard */; };
 		FD3791C71CC3CE29009B066C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C61CC3CE29009B066C /* Assets.xcassets */; };
 		FD3791CA1CC3CE29009B066C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */; };
+		FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */; };
+		FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		FD3791BB1CC3CE29009B066C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD3791BD1CC3CE29009B066C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD3791BE1CC3CE29009B066C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD3791C01CC3CE29009B066C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD3791C11CC3CE29009B066C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD3791C41CC3CE29009B066C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD3791C61CC3CE29009B066C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3791C91CC3CE29009B066C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD3791CB1CC3CE29009B066C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3791D11CC3D7E4009B066C /* TDActivityIndicatorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDActivityIndicatorsViewController.h; sourceTree = "<group>"; };
+		FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDActivityIndicatorsViewController.m; sourceTree = "<group>"; };
+		FD3791DC1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TDApplicationSpecific.h"; sourceTree = "<group>"; };
+		FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TDApplicationSpecific.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +61,10 @@
 		FD3791B91CC3CE29009B066C /* TDUICatalog */ = {
 			isa = PBXGroup;
 			children = (
-				FD3791BD1CC3CE29009B066C /* AppDelegate.h */,
-				FD3791BE1CC3CE29009B066C /* AppDelegate.m */,
-				FD3791C01CC3CE29009B066C /* ViewController.h */,
-				FD3791C11CC3CE29009B066C /* ViewController.m */,
+				FD3791D41CC3D7F3009B066C /* VIewController */,
+				FD3791D51CC3DC9A009B066C /* Application */,
 				FD3791C31CC3CE29009B066C /* Main.storyboard */,
 				FD3791C61CC3CE29009B066C /* Assets.xcassets */,
-				FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */,
 				FD3791CB1CC3CE29009B066C /* Info.plist */,
 				FD3791BA1CC3CE29009B066C /* Supporting Files */,
 			);
@@ -74,9 +74,30 @@
 		FD3791BA1CC3CE29009B066C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD3791BB1CC3CE29009B066C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD3791D41CC3D7F3009B066C /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD3791D11CC3D7E4009B066C /* TDActivityIndicatorsViewController.h */,
+				FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */,
+			);
+			name = VIewController;
+			sourceTree = "<group>";
+		};
+		FD3791D51CC3DC9A009B066C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FD3791BD1CC3CE29009B066C /* AppDelegate.h */,
+				FD3791BE1CC3CE29009B066C /* AppDelegate.m */,
+				FD3791BB1CC3CE29009B066C /* main.m */,
+				FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */,
+				FD3791DC1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.h */,
+				FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3791C21CC3CE29009B066C /* ViewController.m in Sources */,
+				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
+				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +320,7 @@
 				FD3791D01CC3CE29009B066C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
