@@ -7,7 +7,7 @@
 //
 
 #import "TDActivityIndicatorsViewController.h"
-#import "UIColor+TDApplicationSpecific.h"
+#import "UIColor+TDApplicationSpecific.h"  // 到时研究下怎么编写pch
 
 @interface TDActivityIndicatorsViewController ()
 

@@ -29,6 +29,7 @@
 		FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDActivityIndicatorsViewController.m; sourceTree = "<group>"; };
 		FD3791DC1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TDApplicationSpecific.h"; sourceTree = "<group>"; };
 		FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TDApplicationSpecific.m"; sourceTree = "<group>"; };
+		FD3791DF1CC3E80C009B066C /* UIKitCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitCatalog-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +66,6 @@
 				FD3791D51CC3DC9A009B066C /* Application */,
 				FD3791C31CC3CE29009B066C /* Main.storyboard */,
 				FD3791C61CC3CE29009B066C /* Assets.xcassets */,
-				FD3791CB1CC3CE29009B066C /* Info.plist */,
 				FD3791BA1CC3CE29009B066C /* Supporting Files */,
 			);
 			path = TDUICatalog;
@@ -74,6 +74,8 @@
 		FD3791BA1CC3CE29009B066C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD3791CB1CC3CE29009B066C /* Info.plist */,
+				FD3791DF1CC3E80C009B066C /* UIKitCatalog-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -283,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = TDUICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thanksdanny.TDUICatalog;
@@ -294,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = TDUICatalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thanksdanny.TDUICatalog;
