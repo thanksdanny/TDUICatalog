@@ -14,6 +14,7 @@
 		FD3791CA1CC3CE29009B066C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */; };
 		FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */; };
 		FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */; };
+		FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		FD3791DC1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TDApplicationSpecific.h"; sourceTree = "<group>"; };
 		FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TDApplicationSpecific.m"; sourceTree = "<group>"; };
 		FD3791DF1CC3E80C009B066C /* UIKitCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitCatalog-Prefix.pch"; sourceTree = "<group>"; };
+		FD3791E31CC4B139009B066C /* TDAlertControllersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAlertControllersViewController.h; sourceTree = "<group>"; };
+		FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAlertControllersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				FD3791D11CC3D7E4009B066C /* TDActivityIndicatorsViewController.h */,
 				FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */,
+				FD3791E31CC4B139009B066C /* TDAlertControllersViewController.h */,
+				FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
+				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
 				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
