@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--UICatalog-->
@@ -104,8 +105,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TDDatePickerViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Db4-4h-dIO">
-                                                    <rect key="frame" x="15" y="5" width="207" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Date Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Db4-4h-dIO">
+                                                    <rect key="frame" x="15" y="5" width="83" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,6 +121,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JpA-2C-Sqn" kind="showDetail" id="qkf-D6-S4m"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VDd-8w-UAD" detailTextLabel="Pdq-L4-1Of" style="IBUITableViewCellStyleSubtitle" id="bUC-ef-o9F">
                                         <rect key="frame" x="0.0" y="240" width="600" height="44"/>
@@ -349,7 +353,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ea3-Vc-R7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="514"/>
+            <point key="canvasLocation" x="-150" y="-266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EkB-8j-G0e">
@@ -367,7 +371,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zx-hs-GFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="514"/>
+            <point key="canvasLocation" x="-962" y="-266"/>
         </scene>
         <!--Activity Indicators-->
         <scene sceneID="DMV-b4-eUD">
@@ -434,7 +438,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tee-bV-SOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="2018"/>
+            <point key="canvasLocation" x="-3062" y="1398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="520-uY-Ulf">
@@ -452,7 +456,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sW5-lS-VbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="1292"/>
+            <point key="canvasLocation" x="-3062" y="672"/>
         </scene>
         <!--Alert Controllers-->
         <scene sceneID="jGg-An-Rp1">
@@ -600,7 +604,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yb6-Vb-p9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="2018"/>
+            <point key="canvasLocation" x="-2374" y="1398"/>
         </scene>
         <!--Buttons-->
         <scene sceneID="3co-R8-yIc">
@@ -727,6 +731,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Buttons" id="Kd5-Pf-OEU"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="attributedTextButton" destination="yIP-FQ-Che" id="XH9-yf-MOZ"/>
                         <outlet property="imageButton" destination="LBc-jB-pr1" id="bRJ-SG-XCb"/>
@@ -736,7 +741,158 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1730" y="2018"/>
+            <point key="canvasLocation" x="-1702" y="1398"/>
+        </scene>
+        <!--Date Picker-->
+        <scene sceneID="4Pu-oK-xH1">
+            <objects>
+                <viewController id="B3v-lJ-mcI" customClass="TDDatePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m45-Vc-O5F"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKJ-h5-Q8o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tdh-Da-2YP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-8u-U82">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="483179156.327124">
+                                    <!--2016-04-24 08:25:56 +0000-->
+                                </date>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GI6-Pd-XFZ">
+                                <rect key="frame" x="228" y="431" width="145" height="21"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-Cb-Ohv">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="21"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fem-qX-8BW">
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="21"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AQf-du-EjU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-yu-ilT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="145" height="21"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="trailing" secondItem="AQf-du-EjU" secondAttribute="trailingMargin" id="0AF-uA-Zbi"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="top" secondItem="AQf-du-EjU" secondAttribute="top" id="3LN-Yf-YWE"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="top" secondItem="AQf-du-EjU" secondAttribute="top" id="4PP-qr-Co7"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="top" secondItem="AQf-du-EjU" secondAttribute="top" id="4bb-zv-4bG"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="leading" secondItem="AQf-du-EjU" secondAttribute="leading" id="8pc-VZ-CAk"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="centerY" secondItem="AQf-du-EjU" secondAttribute="centerY" id="92O-Y8-4AA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iH9-yu-ilT" secondAttribute="bottom" id="Cif-qW-fTK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="iH9-yu-ilT" secondAttribute="trailing" id="Inh-vQ-wir"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="leading" secondItem="AQf-du-EjU" secondAttribute="leading" id="NJf-gU-nOh"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="centerX" secondItem="AQf-du-EjU" secondAttribute="centerX" id="SLx-DR-ZVH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iH9-yu-ilT" secondAttribute="bottom" id="VtC-EL-not"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="top" secondItem="AQf-du-EjU" secondAttribute="top" id="n3j-br-ua7"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="top" secondItem="AQf-du-EjU" secondAttribute="topMargin" id="pS7-VI-UkO"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="bottom" secondItem="AQf-du-EjU" secondAttribute="bottomMargin" id="q70-VT-ajN"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="leading" secondItem="AQf-du-EjU" secondAttribute="leading" id="uIi-hr-0cp"/>
+                                                            <constraint firstAttribute="trailing" secondItem="iH9-yu-ilT" secondAttribute="trailing" id="vis-zk-SIo"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="leading" secondItem="AQf-du-EjU" secondAttribute="leadingMargin" id="wh0-He-zti"/>
+                                                            <constraint firstItem="iH9-yu-ilT" firstAttribute="leading" secondItem="AQf-du-EjU" secondAttribute="leading" id="zbB-VL-JVK"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="top" secondItem="fem-qX-8BW" secondAttribute="top" id="0nf-Wa-U5f"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="leading" secondItem="fem-qX-8BW" secondAttribute="leading" id="4s7-ca-VFR"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="trailing" secondItem="fem-qX-8BW" secondAttribute="trailingMargin" id="6q7-TQ-8cD"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="top" secondItem="fem-qX-8BW" secondAttribute="topMargin" id="G7e-As-yb3"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="leading" secondItem="fem-qX-8BW" secondAttribute="leadingMargin" id="HP3-98-FRm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AQf-du-EjU" secondAttribute="trailing" id="I3k-Mr-WJc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AQf-du-EjU" secondAttribute="bottom" id="Na1-qP-7fk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AQf-du-EjU" secondAttribute="bottom" id="PXp-qA-I7R"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AQf-du-EjU" secondAttribute="trailing" id="RXY-pa-W8M"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="centerY" secondItem="fem-qX-8BW" secondAttribute="centerY" id="SBH-Y5-G8D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AQf-du-EjU" secondAttribute="trailing" id="SYn-D7-U9L"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="leading" secondItem="fem-qX-8BW" secondAttribute="leading" id="ZLQ-zE-sa2"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="bottom" secondItem="fem-qX-8BW" secondAttribute="bottomMargin" id="eGo-a0-20k"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="top" secondItem="fem-qX-8BW" secondAttribute="top" id="j4o-c9-LRP"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="top" secondItem="fem-qX-8BW" secondAttribute="top" id="j7p-yF-U2L"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="centerX" secondItem="fem-qX-8BW" secondAttribute="centerX" id="kmU-3T-dgj"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="leading" secondItem="fem-qX-8BW" secondAttribute="leading" id="oUX-2S-u1H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AQf-du-EjU" secondAttribute="bottom" id="oYM-BW-8wd"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="top" secondItem="fem-qX-8BW" secondAttribute="top" id="sDA-OH-dWo"/>
+                                                    <constraint firstItem="AQf-du-EjU" firstAttribute="leading" secondItem="fem-qX-8BW" secondAttribute="leading" id="uuT-dT-KLi"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="leading" secondItem="5mv-Cb-Ohv" secondAttribute="leading" id="AQB-FW-gha"/>
+                                            <constraint firstAttribute="trailing" secondItem="fem-qX-8BW" secondAttribute="trailing" id="BNP-KU-b0c"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="top" secondItem="5mv-Cb-Ohv" secondAttribute="top" id="BXD-5e-FLv"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="leading" secondItem="5mv-Cb-Ohv" secondAttribute="leading" id="FGS-iW-EV1"/>
+                                            <constraint firstAttribute="bottom" secondItem="fem-qX-8BW" secondAttribute="bottom" id="Gx1-H5-aqV"/>
+                                            <constraint firstAttribute="trailing" secondItem="fem-qX-8BW" secondAttribute="trailing" id="OPX-0t-qtd"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="top" secondItem="5mv-Cb-Ohv" secondAttribute="top" id="PUi-5F-0VI"/>
+                                            <constraint firstAttribute="bottom" secondItem="fem-qX-8BW" secondAttribute="bottom" id="W7p-LN-Ivg"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="top" secondItem="5mv-Cb-Ohv" secondAttribute="top" id="Zwl-Ww-7yz"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="centerX" secondItem="5mv-Cb-Ohv" secondAttribute="centerX" id="av1-Mn-u3E"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="centerY" secondItem="5mv-Cb-Ohv" secondAttribute="centerY" id="cSV-AW-Vu1"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="top" secondItem="5mv-Cb-Ohv" secondAttribute="top" id="e3G-C5-FKq"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="leading" secondItem="5mv-Cb-Ohv" secondAttribute="leading" id="edy-vi-fWf"/>
+                                            <constraint firstAttribute="bottom" secondItem="fem-qX-8BW" secondAttribute="bottom" id="fAU-Kw-g14"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="trailing" secondItem="5mv-Cb-Ohv" secondAttribute="trailingMargin" id="hyj-XQ-FZE"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="leading" secondItem="5mv-Cb-Ohv" secondAttribute="leadingMargin" id="jOk-Cd-txY"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="leading" secondItem="5mv-Cb-Ohv" secondAttribute="leading" id="tPU-jy-1iO"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="top" secondItem="5mv-Cb-Ohv" secondAttribute="topMargin" id="ui6-p0-Yej"/>
+                                            <constraint firstAttribute="trailing" secondItem="fem-qX-8BW" secondAttribute="trailing" id="yHe-UB-NXz"/>
+                                            <constraint firstItem="fem-qX-8BW" firstAttribute="bottom" secondItem="5mv-Cb-Ohv" secondAttribute="bottomMargin" id="zTF-Ob-hla"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="centerX" secondItem="GI6-Pd-XFZ" secondAttribute="centerX" id="1Ws-8t-Dtd"/>
+                                    <constraint firstAttribute="bottom" secondItem="5mv-Cb-Ohv" secondAttribute="bottom" id="3Sm-RD-MEA"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="top" secondItem="GI6-Pd-XFZ" secondAttribute="top" id="4Ea-J2-Lez"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="leading" secondItem="GI6-Pd-XFZ" secondAttribute="leading" id="5bV-37-aWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="5mv-Cb-Ohv" secondAttribute="bottom" id="GFc-2W-vgF"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="top" secondItem="GI6-Pd-XFZ" secondAttribute="top" id="J7K-uQ-T0x"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="top" secondItem="GI6-Pd-XFZ" secondAttribute="top" id="KWx-tc-5HG"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mv-Cb-Ohv" secondAttribute="trailing" id="Lte-tb-Eg6"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="leading" secondItem="GI6-Pd-XFZ" secondAttribute="leadingMargin" id="OBU-sS-Pp1"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="bottom" secondItem="GI6-Pd-XFZ" secondAttribute="bottomMargin" id="SiY-wf-xSA"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="leading" secondItem="GI6-Pd-XFZ" secondAttribute="leading" id="VtE-Ky-Trh"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="top" secondItem="GI6-Pd-XFZ" secondAttribute="topMargin" id="XJa-Aa-QdJ"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="trailing" secondItem="GI6-Pd-XFZ" secondAttribute="trailingMargin" id="eUX-Pe-Xga"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="top" secondItem="GI6-Pd-XFZ" secondAttribute="top" id="g5e-am-Zpo"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mv-Cb-Ohv" secondAttribute="trailing" id="hzA-py-ArV"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mv-Cb-Ohv" secondAttribute="trailing" id="iGJ-4M-TvT"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="leading" secondItem="GI6-Pd-XFZ" secondAttribute="leading" id="kwW-f3-lwD"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="leading" secondItem="GI6-Pd-XFZ" secondAttribute="leading" id="trF-rf-jUB"/>
+                                    <constraint firstItem="5mv-Cb-Ohv" firstAttribute="centerY" secondItem="GI6-Pd-XFZ" secondAttribute="centerY" id="wpI-US-HE5"/>
+                                    <constraint firstAttribute="bottom" secondItem="5mv-Cb-Ohv" secondAttribute="bottom" id="z3m-ui-Odu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iK0-8u-U82" firstAttribute="centerX" secondItem="tdh-Da-2YP" secondAttribute="centerX" id="Hpq-N0-jx1"/>
+                            <constraint firstAttribute="trailing" secondItem="iK0-8u-U82" secondAttribute="trailing" id="Jhi-oQ-xqw"/>
+                            <constraint firstItem="iK0-8u-U82" firstAttribute="leading" secondItem="tdh-Da-2YP" secondAttribute="leading" id="Rx6-mZ-zTY"/>
+                            <constraint firstItem="iK0-8u-U82" firstAttribute="centerY" secondItem="tdh-Da-2YP" secondAttribute="centerY" id="igZ-zt-pSm"/>
+                            <constraint firstItem="GI6-Pd-XFZ" firstAttribute="top" secondItem="iK0-8u-U82" secondAttribute="bottom" constant="23" id="q97-tw-4NW"/>
+                            <constraint firstItem="GI6-Pd-XFZ" firstAttribute="centerX" secondItem="iK0-8u-U82" secondAttribute="centerX" id="x1B-qH-KV2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Date Picker" id="KLk-VF-X4f"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="iH9-yu-ilT" id="TtL-Jz-4AZ"/>
+                        <outlet property="datePicker" destination="iK0-8u-U82" id="gfH-bv-Q6P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWT-BM-dkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1028" y="1398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hEi-Ar-EGu">
@@ -754,7 +910,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzG-bg-Ekz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="1292"/>
+            <point key="canvasLocation" x="-2374" y="672"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fky-QP-Bdu">
@@ -772,7 +928,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcR-di-k0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="1292"/>
+            <point key="canvasLocation" x="-1702" y="672"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KZX-ql-dyZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JpA-2C-Sqn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RaW-qT-ruG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B3v-lJ-mcI" kind="relationship" relationship="rootViewController" id="oc9-L2-RxV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Rd-hn-AWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1028" y="672"/>
         </scene>
     </scenes>
 </document>

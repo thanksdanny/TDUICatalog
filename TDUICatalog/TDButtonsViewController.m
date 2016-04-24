@@ -6,6 +6,12 @@
 //  Copyright © 2016 thanksdanny. All rights reserved.
 //
 
+
+
+// 有个问题，选中时有个背影，到时看看怎么去掉
+
+
+
 #import "TDButtonsViewController.h"
 #import "UIColor+TDApplicationSpecific.h"
 

@@ -16,6 +16,7 @@
 		FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */; };
 		FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */; };
 		FD86B6DA1CCCAAEA005CE891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */; };
+		FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6DF1CCCBB73005CE891 /* TDDatePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		FD86B6D41CCCA1B5005CE891 /* TDButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDButtonsViewController.h; sourceTree = "<group>"; };
 		FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDButtonsViewController.m; sourceTree = "<group>"; };
 		FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD86B6DE1CCCBB73005CE891 /* TDDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDatePickerViewController.h; sourceTree = "<group>"; };
+		FD86B6DF1CCCBB73005CE891 /* TDDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDatePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */,
 				FD86B6D41CCCA1B5005CE891 /* TDButtonsViewController.h */,
 				FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */,
+				FD86B6DE1CCCBB73005CE891 /* TDDatePickerViewController.h */,
+				FD86B6DF1CCCBB73005CE891 /* TDDatePickerViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
+				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
 				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
 			);
