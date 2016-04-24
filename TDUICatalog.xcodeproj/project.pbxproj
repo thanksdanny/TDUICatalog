@@ -10,11 +10,12 @@
 		FD3791BC1CC3CE29009B066C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791BB1CC3CE29009B066C /* main.m */; };
 		FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791BE1CC3CE29009B066C /* AppDelegate.m */; };
 		FD3791C51CC3CE29009B066C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C31CC3CE29009B066C /* Main.storyboard */; };
-		FD3791C71CC3CE29009B066C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C61CC3CE29009B066C /* Assets.xcassets */; };
 		FD3791CA1CC3CE29009B066C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */; };
 		FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */; };
 		FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */; };
 		FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */; };
+		FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */; };
+		FD86B6DA1CCCAAEA005CE891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,6 @@
 		FD3791BD1CC3CE29009B066C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD3791BE1CC3CE29009B066C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FD3791C41CC3CE29009B066C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD3791C61CC3CE29009B066C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3791C91CC3CE29009B066C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD3791CB1CC3CE29009B066C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3791D11CC3D7E4009B066C /* TDActivityIndicatorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDActivityIndicatorsViewController.h; sourceTree = "<group>"; };
@@ -33,6 +33,9 @@
 		FD3791DF1CC3E80C009B066C /* UIKitCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitCatalog-Prefix.pch"; sourceTree = "<group>"; };
 		FD3791E31CC4B139009B066C /* TDAlertControllersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAlertControllersViewController.h; sourceTree = "<group>"; };
 		FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAlertControllersViewController.m; sourceTree = "<group>"; };
+		FD86B6D41CCCA1B5005CE891 /* TDButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDButtonsViewController.h; sourceTree = "<group>"; };
+		FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDButtonsViewController.m; sourceTree = "<group>"; };
+		FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				FD3791D41CC3D7F3009B066C /* VIewController */,
+				FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */,
 				FD3791D51CC3DC9A009B066C /* Application */,
 				FD3791C31CC3CE29009B066C /* Main.storyboard */,
-				FD3791C61CC3CE29009B066C /* Assets.xcassets */,
 				FD3791BA1CC3CE29009B066C /* Supporting Files */,
 			);
 			path = TDUICatalog;
@@ -90,6 +93,8 @@
 				FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */,
 				FD3791E31CC4B139009B066C /* TDAlertControllersViewController.h */,
 				FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */,
+				FD86B6D41CCCA1B5005CE891 /* TDButtonsViewController.h */,
+				FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -165,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3791CA1CC3CE29009B066C /* LaunchScreen.storyboard in Resources */,
-				FD3791C71CC3CE29009B066C /* Assets.xcassets in Resources */,
+				FD86B6DA1CCCAAEA005CE891 /* Assets.xcassets in Resources */,
 				FD3791C51CC3CE29009B066C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +184,7 @@
 			files = (
 				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
+				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
 				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
