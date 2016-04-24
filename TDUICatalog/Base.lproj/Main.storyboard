@@ -132,15 +132,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VDd-8w-UAD">
-                                                    <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Image View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VDd-8w-UAD">
+                                                    <rect key="frame" x="15" y="5" width="84" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pdq-L4-1Of">
-                                                    <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TDImageViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pdq-L4-1Of">
+                                                    <rect key="frame" x="15" y="25" width="124" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,6 +148,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EKs-2N-JxA" kind="showDetail" id="HCg-py-naJ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="OJw-MQ-kov" detailTextLabel="0Hf-6L-jph" style="IBUITableViewCellStyleSubtitle" id="uAE-RN-7Ci">
                                         <rect key="frame" x="0.0" y="284" width="600" height="44"/>
@@ -894,6 +897,39 @@
             </objects>
             <point key="canvasLocation" x="-1028" y="1398"/>
         </scene>
+        <!--Image View-->
+        <scene sceneID="Orp-jg-Zjz">
+            <objects>
+                <viewController id="BVv-z0-2m1" customClass="TDImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4TP-vC-bCv"/>
+                        <viewControllerLayoutGuide type="bottom" id="tez-5w-9dX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IKU-2e-32V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-Yn-Jf8">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tez-5w-9dX" firstAttribute="top" secondItem="NMa-Yn-Jf8" secondAttribute="bottom" id="T5n-d3-Fgj"/>
+                            <constraint firstItem="NMa-Yn-Jf8" firstAttribute="top" secondItem="4TP-vC-bCv" secondAttribute="bottom" id="Tus-mV-eqX"/>
+                            <constraint firstAttribute="trailing" secondItem="NMa-Yn-Jf8" secondAttribute="trailing" id="xi3-mz-f0O"/>
+                            <constraint firstItem="NMa-Yn-Jf8" firstAttribute="leading" secondItem="IKU-2e-32V" secondAttribute="leading" id="xq6-kp-POS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image View" id="DCc-v9-gA4"/>
+                    <connections>
+                        <outlet property="imageView" destination="NMa-Yn-Jf8" id="JXw-mX-2pr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10i-Yg-CRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-379" y="1398"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hEi-Ar-EGu">
             <objects>
@@ -947,6 +983,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Rd-hn-AWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1028" y="672"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uV6-fL-K6z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EKs-2N-JxA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="suN-4G-xwt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BVv-z0-2m1" kind="relationship" relationship="rootViewController" id="UIY-et-euo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnd-AF-Voa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-379" y="672"/>
         </scene>
     </scenes>
 </document>
