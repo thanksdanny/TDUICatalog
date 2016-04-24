@@ -66,6 +66,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TZH-vN-mWE" kind="showDetail" id="Qyb-Dp-JKy"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dtv-aj-3TO" detailTextLabel="q50-4g-Zg3" style="IBUITableViewCellStyleSubtitle" id="4Bi-za-FWb">
                                         <rect key="frame" x="0.0" y="152" width="600" height="44"/>
