@@ -28,6 +28,7 @@
     [self configureDefaultSegmentedControl];
     [self configureTintedSegmentedControl];
     [self configureCustomSegmentedControl];
+    [self configureCustomBackgroundSegmentedControl];
 }
 
 #pragma mark - Configuration
@@ -44,7 +45,6 @@
     [self.tintedSegmentedControl addTarget:self action:@selector(selectedSegmentDidChange:) forControlEvents:UIControlEventValueChanged];
 }
 
-// 第三个图标为啥出不来...
 - (void)configureCustomSegmentedControl {
     NSDictionary *imageToAccessibilityLabelMappings = @{
         @"checkmark_icon" : NSLocalizedString(@"Done", nil),
@@ -69,6 +69,34 @@
     
     // Set the background images for each control state
     UIImage *normalSegmentBackgroundImage = [UIImage imageNamed:@"stepper_and_segment_background"];
+    [self.customBackgroundSegmentedControl setBackgroundImage:normalSegmentBackgroundImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // 最后一个参数
+    
+    UIImage *disabledSegmentBackgroundImage = [UIImage imageNamed:@"stepper_and_segment_background_disabled"];
+    [self.customBackgroundSegmentedControl setBackgroundImage:disabledSegmentBackgroundImage  forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+    
+    UIImage *highlightedSegmentBackgroundImage = [UIImage imageNamed:@"stepper_and_segment_background_highlighted"];
+    [self.customBackgroundSegmentedControl setBackgroundImage:highlightedSegmentBackgroundImage  forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+    // Set the divider image.
+    UIImage *segmentDividerImage = [UIImage imageNamed:@"stepper_and_segment_segment_divider"];
+    [self.customBackgroundSegmentedControl setDividerImage:segmentDividerImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];  // 这个方法...
+    
+    //Create a font to use for the attributed title (both normal and highlighted states).
+    UIFontDescriptor *captionFontDescriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleCaption1];
+    UIFont *font = [UIFont fontWithDescriptor:captionFontDescriptor size:0]; // size 0???!!
+    
+    NSDictionary *normalTextAttributes = @{
+        NSForegroundColorAttributeName : [UIColor td_applicationPurpleColor],
+        NSFontAttributeName : font
+        };
+    [self.customBackgroundSegmentedControl setTitleTextAttributes:normalTextAttributes forState:UIControlStateNormal];
+    
+    NSDictionary *highTextAttributes = @{
+        NSForegroundColorAttributeName : [UIColor td_applicationGreenColor],
+        NSFontAttributeName : font
+        };
+    [self.customBackgroundSegmentedControl setTitleTextAttributes:highTextAttributes forState:UIControlStateHighlighted];
+    [self.customBackgroundSegmentedControl addTarget:self action:@selector(selectedSegmentDidChange:) forControlEvents:UIControlEventValueChanged];
     
 }
 
