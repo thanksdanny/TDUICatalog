@@ -65,6 +65,10 @@
 }
 
 - (void)configureCustomBackgroundSegmentedControl {
+    self.customBackgroundSegmentedControl.selectedSegmentIndex = 2;
+    
+    // Set the background images for each control state
+    UIImage *normalSegmentBackgroundImage = [UIImage imageNamed:@"stepper_and_segment_background"];
     
 }
 
