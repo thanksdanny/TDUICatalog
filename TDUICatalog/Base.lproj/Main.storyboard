@@ -240,15 +240,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53b-SJ-wsV">
-                                                    <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Segmented Controls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53b-SJ-wsV">
+                                                    <rect key="frame" x="15" y="5" width="149" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eYg-dt-ZQw">
-                                                    <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TDSegmentedControlsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eYg-dt-ZQw">
+                                                    <rect key="frame" x="15" y="25" width="196" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -256,6 +256,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hLq-XV-LAv" kind="showDetail" id="CmZ-ig-g90"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="EWc-wJ-lt5" detailTextLabel="nOT-2u-PwE" style="IBUITableViewCellStyleSubtitle" id="xsd-rC-RCJ">
                                         <rect key="frame" x="0.0" y="460" width="600" height="44"/>
@@ -365,7 +368,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ea3-Vc-R7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-470" y="-122"/>
+            <point key="canvasLocation" x="-766" y="-890"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EkB-8j-G0e">
@@ -383,7 +386,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zx-hs-GFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="-122"/>
+            <point key="canvasLocation" x="-1578" y="-890"/>
         </scene>
         <!--Activity Indicators-->
         <scene sceneID="DMV-b4-eUD">
@@ -450,7 +453,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tee-bV-SOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5198" y="1646"/>
+            <point key="canvasLocation" x="-6056" y="1598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="520-uY-Ulf">
@@ -468,7 +471,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sW5-lS-VbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5198" y="920"/>
+            <point key="canvasLocation" x="-6056" y="872"/>
         </scene>
         <!--Alert Controllers-->
         <scene sceneID="jGg-An-Rp1">
@@ -616,7 +619,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yb6-Vb-p9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4510" y="1646"/>
+            <point key="canvasLocation" x="-5368" y="1598"/>
         </scene>
         <!--Buttons-->
         <scene sceneID="3co-R8-yIc">
@@ -753,7 +756,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-3838" y="1646"/>
+            <point key="canvasLocation" x="-4696" y="1598"/>
         </scene>
         <!--Date Picker-->
         <scene sceneID="4Pu-oK-xH1">
@@ -904,7 +907,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWT-BM-dkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3164" y="1646"/>
+            <point key="canvasLocation" x="-4022" y="1598"/>
         </scene>
         <!--Image View-->
         <scene sceneID="Orp-jg-Zjz">
@@ -937,7 +940,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10i-Yg-CRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2515" y="1646"/>
+            <point key="canvasLocation" x="-3373" y="1598"/>
         </scene>
         <!--Page Control-->
         <scene sceneID="rQq-Yl-ilW">
@@ -979,7 +982,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TG-AY-6zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1863" y="1646"/>
+            <point key="canvasLocation" x="-2721" y="1598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hEi-Ar-EGu">
@@ -997,7 +1000,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzG-bg-Ekz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4510" y="920"/>
+            <point key="canvasLocation" x="-5368" y="872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fky-QP-Bdu">
@@ -1015,7 +1018,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcR-di-k0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3838" y="920"/>
+            <point key="canvasLocation" x="-4696" y="872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KZX-ql-dyZ">
@@ -1033,7 +1036,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Rd-hn-AWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3164" y="920"/>
+            <point key="canvasLocation" x="-4022" y="872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uV6-fL-K6z">
@@ -1051,7 +1054,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnd-AF-Voa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2515" y="920"/>
+            <point key="canvasLocation" x="-3373" y="872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nCQ-Tg-z02">
@@ -1069,7 +1072,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cl-SH-Mkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1863" y="920"/>
+            <point key="canvasLocation" x="-2721" y="872"/>
         </scene>
         <!--Picker View-->
         <scene sceneID="AiY-hL-rlI">
@@ -1117,7 +1120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6B-lm-xOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234" y="1646"/>
+            <point key="canvasLocation" x="-2092" y="1598"/>
         </scene>
         <!--Progress Views-->
         <scene sceneID="Zlu-bg-eU7">
@@ -1215,7 +1218,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tW-nK-r2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-590" y="1646"/>
+            <point key="canvasLocation" x="-1448" y="1598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mek-J9-CGi">
@@ -1233,7 +1236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN1-Kz-6PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234" y="920"/>
+            <point key="canvasLocation" x="-2092" y="872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p3S-1K-ewe">
@@ -1251,7 +1254,159 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpW-Rm-VoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-590" y="920"/>
+            <point key="canvasLocation" x="-1448" y="872"/>
+        </scene>
+        <!--Segmented Controls-->
+        <scene sceneID="Nm7-rb-wph">
+            <objects>
+                <tableViewController id="yhX-tm-LWw" customClass="TDSegmentedControllsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NfS-PJ-EI0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="DEFAULT" id="ZCE-Ll-vQc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="7X5-i1-Xz1">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7X5-i1-Xz1" id="LiF-Co-npP">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-w3-ylq">
+                                                    <rect key="frame" x="209" y="23" width="182" height="29"/>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                        <segment title="Third"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="V3c-w3-ylq" firstAttribute="centerY" secondItem="LiF-Co-npP" secondAttribute="centerY" id="PqR-bT-xtx"/>
+                                                <constraint firstItem="V3c-w3-ylq" firstAttribute="centerX" secondItem="LiF-Co-npP" secondAttribute="centerX" id="hIT-9d-eiF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="TINTED" id="uFu-kx-RBP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="VLb-nk-7k5">
+                                        <rect key="frame" x="0.0" y="240" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VLb-nk-7k5" id="LqB-0d-7Ya">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="syv-GK-mKO">
+                                                    <rect key="frame" x="209" y="23" width="182" height="29"/>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                        <segment title="Third"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="syv-GK-mKO" firstAttribute="centerX" secondItem="LqB-0d-7Ya" secondAttribute="centerX" id="due-JR-KIF"/>
+                                                <constraint firstItem="syv-GK-mKO" firstAttribute="centerY" secondItem="LqB-0d-7Ya" secondAttribute="centerY" id="eH9-RT-zHJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="CUSTOM SEGMENTS" id="clm-3H-jA7">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="zcT-fq-1io">
+                                        <rect key="frame" x="0.0" y="366" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zcT-fq-1io" id="3l6-Yc-H43">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-mY-si5">
+                                                    <rect key="frame" x="209" y="23" width="182" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="182" id="6hf-jF-7c3"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                        <segment title="Third"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Az1-mY-si5" firstAttribute="centerX" secondItem="3l6-Yc-H43" secondAttribute="centerX" id="Idv-Lb-PPh"/>
+                                                <constraint firstItem="Az1-mY-si5" firstAttribute="centerY" secondItem="3l6-Yc-H43" secondAttribute="centerY" id="Urn-UM-HIY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="CUSTOM BACKGROUND" id="uQt-Yx-LdN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="Doo-iC-KbE">
+                                        <rect key="frame" x="0.0" y="492" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Doo-iC-KbE" id="brU-8h-ptn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dtq-GU-kFY">
+                                                    <rect key="frame" x="209" y="23" width="182" height="29"/>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                        <segment title="Third"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dtq-GU-kFY" firstAttribute="centerY" secondItem="brU-8h-ptn" secondAttribute="centerY" id="FN4-jJ-9ju"/>
+                                                <constraint firstItem="dtq-GU-kFY" firstAttribute="centerX" secondItem="brU-8h-ptn" secondAttribute="centerX" id="kRZ-Fg-nmp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yhX-tm-LWw" id="eUg-HR-zrC"/>
+                            <outlet property="delegate" destination="yhX-tm-LWw" id="NRG-Nc-mvD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Segmented Controls" id="rkR-ad-CwD"/>
+                    <connections>
+                        <outlet property="customBackgroundSegmentedControl" destination="dtq-GU-kFY" id="5KC-Ml-CHs"/>
+                        <outlet property="customSegmentedControl" destination="Az1-mY-si5" id="RCB-JZ-BLZ"/>
+                        <outlet property="defaultSegmentedControl" destination="V3c-w3-ylq" id="Zex-Hh-kVK"/>
+                        <outlet property="tintedSegmentedControl" destination="syv-GK-mKO" id="s2M-2q-5di"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4K-4o-LCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="1598"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hxG-eW-iVK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hLq-XV-LAv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X25-2M-cea">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yhX-tm-LWw" kind="relationship" relationship="rootViewController" id="ufz-8c-INx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLT-7q-hbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="872"/>
         </scene>
     </scenes>
 </document>

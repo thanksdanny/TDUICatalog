@@ -21,6 +21,7 @@
 		FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6E51CCD2BD9005CE891 /* TDPageControlViewController.m */; };
 		FD86B6E91CCE4E93005CE891 /* TDPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */; };
 		FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */; };
+		FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDPickerViewController.m; sourceTree = "<group>"; };
 		FD86B6EA1CCF34ED005CE891 /* TDProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDProgressViewController.h; sourceTree = "<group>"; };
 		FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDProgressViewController.m; sourceTree = "<group>"; };
+		FD86B6ED1CCF8AA4005CE891 /* TDSegmentedControllsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSegmentedControllsViewController.h; sourceTree = "<group>"; };
+		FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSegmentedControllsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */,
 				FD86B6EA1CCF34ED005CE891 /* TDProgressViewController.h */,
 				FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */,
+				FD86B6ED1CCF8AA4005CE891 /* TDSegmentedControllsViewController.h */,
+				FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
+				FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */,
 				FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */,
 				FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */,
 				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
