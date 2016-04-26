@@ -1068,7 +1068,7 @@
             </objects>
             <point key="canvasLocation" x="-1863" y="920"/>
         </scene>
-        <!--Picker View Controller-->
+        <!--Picker View-->
         <scene sceneID="AiY-hL-rlI">
             <objects>
                 <viewController id="WLg-Is-cJm" customClass="TDPickerViewController" sceneMemberID="viewController">
@@ -1085,6 +1085,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="CA0-aF-yno"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="WLg-Is-cJm" id="eHE-OO-Zkv"/>
+                                    <outlet property="delegate" destination="WLg-Is-cJm" id="O80-wJ-4ld"/>
+                                </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-r7-XCL">
                                 <rect key="frame" x="0.0" y="280" width="600" height="320"/>
@@ -1102,7 +1106,7 @@
                             <constraint firstItem="NDt-j8-ho0" firstAttribute="leading" secondItem="AHE-Ah-BhL" secondAttribute="leading" id="tTU-EH-Qxm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lxi-zz-9FN"/>
+                    <navigationItem key="navigationItem" title="Picker View" id="Lxi-zz-9FN"/>
                     <connections>
                         <outlet property="colorSwatchView" destination="YWs-r7-XCL" id="lVH-T4-QAe"/>
                         <outlet property="pickerView" destination="NDt-j8-ho0" id="uyb-Tw-nXr"/>
