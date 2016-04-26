@@ -20,6 +20,7 @@
 		FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6E21CCD22CF005CE891 /* TDImageViewController.m */; };
 		FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6E51CCD2BD9005CE891 /* TDPageControlViewController.m */; };
 		FD86B6E91CCE4E93005CE891 /* TDPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */; };
+		FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		FD86B6E51CCD2BD9005CE891 /* TDPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDPageControlViewController.m; sourceTree = "<group>"; };
 		FD86B6E71CCE4E93005CE891 /* TDPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDPickerViewController.h; sourceTree = "<group>"; };
 		FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDPickerViewController.m; sourceTree = "<group>"; };
+		FD86B6EA1CCF34ED005CE891 /* TDProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDProgressViewController.h; sourceTree = "<group>"; };
+		FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDProgressViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				FD86B6E51CCD2BD9005CE891 /* TDPageControlViewController.m */,
 				FD86B6E71CCE4E93005CE891 /* TDPickerViewController.h */,
 				FD86B6E81CCE4E93005CE891 /* TDPickerViewController.m */,
+				FD86B6EA1CCF34ED005CE891 /* TDProgressViewController.h */,
+				FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */,
 				FD86B6E91CCE4E93005CE891 /* TDPickerViewController.m in Sources */,
 				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,

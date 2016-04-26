@@ -213,15 +213,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cOc-Zb-nmx">
-                                                    <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Progress Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cOc-Zb-nmx">
+                                                    <rect key="frame" x="15" y="5" width="112" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUQ-kP-szv">
-                                                    <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TDProgressViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUQ-kP-szv">
+                                                    <rect key="frame" x="15" y="25" width="139" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,6 +229,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Jup-9Z-cSe" kind="showDetail" id="oY9-o4-Qr3"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="53b-SJ-wsV" detailTextLabel="eYg-dt-ZQw" style="IBUITableViewCellStyleSubtitle" id="6dP-5s-9l8">
                                         <rect key="frame" x="0.0" y="416" width="600" height="44"/>
@@ -1116,6 +1119,104 @@
             </objects>
             <point key="canvasLocation" x="-1234" y="1646"/>
         </scene>
+        <!--Progress Views-->
+        <scene sceneID="Zlu-bg-eU7">
+            <objects>
+                <tableViewController id="uli-Cr-XIw" customClass="TDProgressViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="sqC-Cr-5JV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="DEFAULT" id="WHo-Uj-nbd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uJN-2i-tYC">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uJN-2i-tYC" id="JZe-fP-2G6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W1o-lf-LR7">
+                                                    <rect key="frame" x="8" y="21" width="584" height="2"/>
+                                                </progressView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="W1o-lf-LR7" secondAttribute="bottom" constant="12" id="9bc-i7-8G2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="W1o-lf-LR7" secondAttribute="trailing" id="LPf-wi-bXr"/>
+                                                <constraint firstItem="W1o-lf-LR7" firstAttribute="top" secondItem="JZe-fP-2G6" secondAttribute="topMargin" constant="13" id="Vn4-tz-QZ9"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="W1o-lf-LR7" secondAttribute="leading" id="YFu-vR-mW7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="BAR" id="qcb-Vi-Ry4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ar1-hw-sPw">
+                                        <rect key="frame" x="0.0" y="209" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ar1-hw-sPw" id="wT0-We-5aD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aM0-4M-4FC">
+                                                    <rect key="frame" x="8" y="24" width="584" height="2"/>
+                                                </progressView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aM0-4M-4FC" secondAttribute="trailing" id="Bvc-vF-yO6"/>
+                                                <constraint firstItem="aM0-4M-4FC" firstAttribute="top" secondItem="wT0-We-5aD" secondAttribute="topMargin" constant="16" id="Frp-0x-PkV"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="aM0-4M-4FC" secondAttribute="leading" id="e7d-Tb-Rf2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aM0-4M-4FC" secondAttribute="bottom" constant="9" id="znv-Gg-T3F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="TINTED" id="97e-rD-bt1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Lgt-1w-5KD">
+                                        <rect key="frame" x="0.0" y="304" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lgt-1w-5KD" id="9nn-w3-nDL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KcQ-dX-LdO">
+                                                    <rect key="frame" x="12" y="26" width="584" height="2"/>
+                                                </progressView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KcQ-dX-LdO" firstAttribute="leading" secondItem="9nn-w3-nDL" secondAttribute="leadingMargin" constant="4" id="QOp-YT-fJs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KcQ-dX-LdO" secondAttribute="trailing" constant="-4" id="Wtt-2o-8jm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KcQ-dX-LdO" secondAttribute="bottom" constant="7" id="ZxH-wg-2gc"/>
+                                                <constraint firstItem="KcQ-dX-LdO" firstAttribute="top" secondItem="9nn-w3-nDL" secondAttribute="topMargin" constant="18" id="evC-nd-hQJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uli-Cr-XIw" id="EGi-zj-UZg"/>
+                            <outlet property="delegate" destination="uli-Cr-XIw" id="dbQ-gr-sO4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Progress Views" id="mjA-1Z-2px"/>
+                    <connections>
+                        <outlet property="barStyleProgressView" destination="aM0-4M-4FC" id="SlI-xt-o8D"/>
+                        <outlet property="defaultStyleProgressview" destination="W1o-lf-LR7" id="koe-2C-pK2"/>
+                        <outlet property="tintedProgressView" destination="KcQ-dX-LdO" id="yEv-LU-Ykj"/>
+                        <outletCollection property="progressViews" destination="W1o-lf-LR7" id="kgg-ML-9U3"/>
+                        <outletCollection property="progressViews" destination="aM0-4M-4FC" id="YOp-FB-Eyr"/>
+                        <outletCollection property="progressViews" destination="KcQ-dX-LdO" id="TW2-KD-0qa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tW-nK-r2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="1646"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mek-J9-CGi">
             <objects>
@@ -1133,6 +1234,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN1-Kz-6PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1234" y="920"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p3S-1K-ewe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jup-9Z-cSe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NTW-SB-KK2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uli-Cr-XIw" kind="relationship" relationship="rootViewController" id="dH3-MI-SPj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpW-Rm-VoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="920"/>
         </scene>
     </scenes>
 </document>
