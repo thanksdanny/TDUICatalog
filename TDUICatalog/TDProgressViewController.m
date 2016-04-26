@@ -20,7 +20,7 @@ static void *TDProgressViewControllerContext = &TDProgressViewControllerContext;
 @property (weak, nonatomic) IBOutlet UIProgressView *defaultStyleProgressview;
 @property (weak, nonatomic) IBOutlet UIProgressView *barStyleProgressView;
 @property (weak, nonatomic) IBOutlet UIProgressView *tintedProgressView;
-@property (weak, nonatomic) IBOutletCollection(UIProgressView) NSArray *progressViews;
+@property (strong, nonatomic) IBOutletCollection(UIProgressView) NSArray *progressViews;
 
 /*!
  An `NSProgress` object who's `fractionCompleted` is observed using KVO to
@@ -88,10 +88,10 @@ static void *TDProgressViewControllerContext = &TDProgressViewControllerContext;
     [super viewDidAppear:animated];
     
     // Reset the completed progress of the `UIProgressView`s.
-//    for (UIProgressView *progressView in self.progressViews) {
-//        [progressView setProgress:0.0 animated:NO];
-//    }
-    [self.defaultStyleProgressview setProgress:0.0 animated:NO];
+    for (UIProgressView *progressView in self.progressViews) {
+        [progressView setProgress:0.0 animated:NO];
+    }
+//    [self.defaultStyleProgressview setProgress:0.0 animated:NO];
     
     /*
      Reset the `completedUnitCount` of the `NSProgress` object and create
@@ -113,10 +113,10 @@ static void *TDProgressViewControllerContext = &TDProgressViewControllerContext;
     // Check if this is KVO notification for our `NSProgress` object
     if (context == TDProgressViewControllerContext && object == self.progress && [keyPath isEqualToString:@"fractionCompleted"]) {
         // Update the progress views.
-//        for (UIProgressView *progressView in self.progressViews) {
-//            [progressView setProgress:self.progress.fractionCompleted animated:YES];
-        [self.defaultStyleProgressview setProgress:self.progress.fractionCompleted animated:YES];
-//        }
+        for (UIProgressView *progressView in self.progressViews) {
+            [progressView setProgress:self.progress.fractionCompleted animated:YES];
+//        [self.defaultStyleProgressview setProgress:self.progress.fractionCompleted animated:YES];
+        }
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
