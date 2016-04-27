@@ -14,6 +14,7 @@
 		FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791D21CC3D7E4009B066C /* TDActivityIndicatorsViewController.m */; };
 		FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */; };
 		FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */; };
+		FD4E421C1CD109F700BF27CD /* TDSteppersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4E421B1CD109F700BF27CD /* TDSteppersViewController.m */; };
 		FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */; };
 		FD86B6DA1CCCAAEA005CE891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */; };
 		FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6DF1CCCBB73005CE891 /* TDDatePickerViewController.m */; };
@@ -40,6 +41,8 @@
 		FD3791DF1CC3E80C009B066C /* UIKitCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitCatalog-Prefix.pch"; sourceTree = "<group>"; };
 		FD3791E31CC4B139009B066C /* TDAlertControllersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAlertControllersViewController.h; sourceTree = "<group>"; };
 		FD3791E41CC4B139009B066C /* TDAlertControllersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAlertControllersViewController.m; sourceTree = "<group>"; };
+		FD4E421A1CD109F700BF27CD /* TDSteppersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSteppersViewController.h; sourceTree = "<group>"; };
+		FD4E421B1CD109F700BF27CD /* TDSteppersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSteppersViewController.m; sourceTree = "<group>"; };
 		FD86B6D41CCCA1B5005CE891 /* TDButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDButtonsViewController.h; sourceTree = "<group>"; };
 		FD86B6D51CCCA1B5005CE891 /* TDButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDButtonsViewController.m; sourceTree = "<group>"; };
 		FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */,
 				FD86B6F01CD101E3005CE891 /* TDSlidersViewController.h */,
 				FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */,
+				FD4E421A1CD109F700BF27CD /* TDSteppersViewController.h */,
+				FD4E421B1CD109F700BF27CD /* TDSteppersViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
 				FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
+				FD4E421C1CD109F700BF27CD /* TDSteppersViewController.m in Sources */,
 				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
