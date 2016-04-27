@@ -79,7 +79,7 @@
     
     // Set the divider image.
     UIImage *segmentDividerImage = [UIImage imageNamed:@"stepper_and_segment_segment_divider"];
-    [self.customBackgroundSegmentedControl setDividerImage:segmentDividerImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];  // 这个方法...
+    [self.customBackgroundSegmentedControl setDividerImage:segmentDividerImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     //Create a font to use for the attributed title (both normal and highlighted states).
     UIFontDescriptor *captionFontDescriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleCaption1];
