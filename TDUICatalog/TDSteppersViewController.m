@@ -89,7 +89,7 @@
     UILabel *stepperLabel;
     if (self.defaultStepper == stepper) {
         stepperLabel = self.defaultSteperLabel;
-    } else if (self.tintedStepper) {
+    } else if (self.tintedStepper == stepper) {
         stepperLabel = self.tintedSteperLabel;
     } else if (self.customStepper == stepper) {
         stepperLabel = self.customSteperLabel;
