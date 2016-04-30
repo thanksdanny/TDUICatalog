@@ -25,6 +25,7 @@
 		FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */; };
 		FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */; };
 		FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */; };
+		FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSegmentedControllsViewController.m; sourceTree = "<group>"; };
 		FD86B6F01CD101E3005CE891 /* TDSlidersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSlidersViewController.h; sourceTree = "<group>"; };
 		FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSlidersViewController.m; sourceTree = "<group>"; };
+		FDA5CBC01CD4B07C00E19793 /* TDTextFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextFieldsViewController.h; sourceTree = "<group>"; };
+		FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextFieldsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				FD4E421B1CD109F700BF27CD /* TDSteppersViewController.m */,
 				FD4E421D1CD1212D00BF27CD /* TDSwitchesViewController.h */,
 				FD4E421E1CD1212D00BF27CD /* TDSwitchesViewController.m */,
+				FDA5CBC01CD4B07C00E19793 /* TDTextFieldsViewController.h */,
+				FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */,
 				FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */,
 				FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */,
+				FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */,
 				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
 				FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
