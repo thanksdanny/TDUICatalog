@@ -27,6 +27,7 @@
 		FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */; };
 		FD8EDF9A1CD60844000AAD6F /* TDDefaultSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */; };
 		FD8EDF9D1CD60B43000AAD6F /* TDCustomSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF9C1CD60B43000AAD6F /* TDCustomSearchBarViewController.m */; };
+		FD8EDFA01CD61033000AAD6F /* TDSearchControllerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */; };
 		FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */; };
 		FDA5CBC51CD5DBC600E19793 /* TDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */; };
 		FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */; };
@@ -73,6 +74,8 @@
 		FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDefaultSearchBarViewController.m; sourceTree = "<group>"; };
 		FD8EDF9B1CD60B43000AAD6F /* TDCustomSearchBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDCustomSearchBarViewController.h; sourceTree = "<group>"; };
 		FD8EDF9C1CD60B43000AAD6F /* TDCustomSearchBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCustomSearchBarViewController.m; sourceTree = "<group>"; };
+		FD8EDF9E1CD61033000AAD6F /* TDSearchControllerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchControllerBaseViewController.h; sourceTree = "<group>"; };
+		FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchControllerBaseViewController.m; sourceTree = "<group>"; };
 		FDA5CBC01CD4B07C00E19793 /* TDTextFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextFieldsViewController.h; sourceTree = "<group>"; };
 		FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextFieldsViewController.m; sourceTree = "<group>"; };
 		FDA5CBC31CD5DBC600E19793 /* TDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextViewController.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 		FD8EDF971CD60814000AAD6F /* Base View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD8EDF9E1CD61033000AAD6F /* TDSearchControllerBaseViewController.h */,
+				FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */,
 			);
 			name = "Base View Controller";
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */,
 				FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */,
 				FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */,
+				FD8EDFA01CD61033000AAD6F /* TDSearchControllerBaseViewController.m in Sources */,
 				FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */,
 				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
 				FD8EDF9D1CD60B43000AAD6F /* TDCustomSearchBarViewController.m in Sources */,
