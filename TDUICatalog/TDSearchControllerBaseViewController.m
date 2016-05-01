@@ -33,6 +33,20 @@ NSString *const TDSearchControllerBaseViewControllerTableViewCellIdentifier = @"
     self.visibleResults = self.allResults;
 }
 
+#pragma mark - Property Overrides
+- (void)setFilterString:(NSString *)filterString {
+    _filterString = filterString;
+    
+    if (!filterString || filterString.length <=0) {
+        self.visibleResults = self.allResults;
+    } else {
+        NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", filterString]; // NSPredicate 是？
+        self.visibleResults = [self.allResults filteredArrayUsingPredicate:filterPredicate];
+    }
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
