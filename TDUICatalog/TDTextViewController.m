@@ -9,7 +9,7 @@
 #import "TDTextViewController.h"
 #import "UIColor+TDApplicationSpecific.h"
 
-@interface TDTextViewController ()
+@interface TDTextViewController () <UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 

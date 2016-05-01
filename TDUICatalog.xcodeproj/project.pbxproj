@@ -27,6 +27,7 @@
 		FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */; };
 		FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */; };
 		FDA5CBC51CD5DBC600E19793 /* TDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */; };
+		FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextFieldsViewController.m; sourceTree = "<group>"; };
 		FDA5CBC31CD5DBC600E19793 /* TDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextViewController.h; sourceTree = "<group>"; };
 		FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextViewController.m; sourceTree = "<group>"; };
+		FDA5CBC61CD5F21100E19793 /* TDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDWebViewController.h; sourceTree = "<group>"; };
+		FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */,
 				FDA5CBC31CD5DBC600E19793 /* TDTextViewController.h */,
 				FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */,
+				FDA5CBC61CD5F21100E19793 /* TDWebViewController.h */,
+				FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */,
 			);
 			name = VIewController;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
+				FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
 				FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */,
 				FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */,
