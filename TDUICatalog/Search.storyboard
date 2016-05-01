@@ -172,7 +172,7 @@
         <!--Search Results View Controller-->
         <scene sceneID="6e4-ff-2z0">
             <objects>
-                <tableViewController id="L1j-jU-UUq" userLabel="Search Results View Controller" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TDSearchResultsViewControllerStoryboardIdentifier" id="L1j-jU-UUq" userLabel="Search Results View Controller" customClass="TDSearchResultsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jE4-Kf-PbF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
         <!--Presented Over Navigation Bar-->
         <scene sceneID="4mZ-6b-JNt">
             <objects>
-                <tableViewController id="zoU-kn-Tyc" sceneMemberID="viewController">
+                <tableViewController id="zoU-kn-Tyc" customClass="TDSearchPresentOverNavigationBarViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSF-xV-Q1E">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Presented Over Navigation Bar" id="5Iy-x0-iFH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pqU-vQ-73a"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="pqU-vQ-73a">
+                            <connections>
+                                <action selector="searchButtonClicked:" destination="zoU-kn-Tyc" id="2H0-5B-HSv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oO1-tz-Dsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,7 +269,7 @@
         <!--Search Bar Embedded in Navigation Bar-->
         <scene sceneID="zFu-7V-keb">
             <objects>
-                <tableViewController id="RUd-Sp-6nu" sceneMemberID="viewController">
+                <tableViewController id="RUd-Sp-6nu" customClass="TDSearchBarEmbeddedInNavigationBarViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0rn-VE-WpH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

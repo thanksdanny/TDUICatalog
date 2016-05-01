@@ -28,6 +28,10 @@
 		FD8EDF9A1CD60844000AAD6F /* TDDefaultSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */; };
 		FD8EDF9D1CD60B43000AAD6F /* TDCustomSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF9C1CD60B43000AAD6F /* TDCustomSearchBarViewController.m */; };
 		FD8EDFA01CD61033000AAD6F /* TDSearchControllerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */; };
+		FD8EDFA31CD62FFF000AAD6F /* TDSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDFA21CD62FFF000AAD6F /* TDSearchResultsViewController.m */; };
+		FD8EDFA61CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDFA51CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.m */; };
+		FD8EDFA91CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDFA81CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.m */; };
+		FD8EDFAC1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDFAB1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.m */; };
 		FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */; };
 		FDA5CBC51CD5DBC600E19793 /* TDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */; };
 		FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */; };
@@ -76,6 +80,14 @@
 		FD8EDF9C1CD60B43000AAD6F /* TDCustomSearchBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCustomSearchBarViewController.m; sourceTree = "<group>"; };
 		FD8EDF9E1CD61033000AAD6F /* TDSearchControllerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchControllerBaseViewController.h; sourceTree = "<group>"; };
 		FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchControllerBaseViewController.m; sourceTree = "<group>"; };
+		FD8EDFA11CD62FFF000AAD6F /* TDSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchResultsViewController.h; sourceTree = "<group>"; };
+		FD8EDFA21CD62FFF000AAD6F /* TDSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchResultsViewController.m; sourceTree = "<group>"; };
+		FD8EDFA41CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchBarEmbeddedInNavigationBarViewController.h; sourceTree = "<group>"; };
+		FD8EDFA51CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchBarEmbeddedInNavigationBarViewController.m; sourceTree = "<group>"; };
+		FD8EDFA71CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchPresentOverNavigationBarViewController.h; sourceTree = "<group>"; };
+		FD8EDFA81CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchPresentOverNavigationBarViewController.m; sourceTree = "<group>"; };
+		FD8EDFAA1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSearchShowResultsInSourceViewController.h; sourceTree = "<group>"; };
+		FD8EDFAB1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSearchShowResultsInSourceViewController.m; sourceTree = "<group>"; };
 		FDA5CBC01CD4B07C00E19793 /* TDTextFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextFieldsViewController.h; sourceTree = "<group>"; };
 		FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextFieldsViewController.m; sourceTree = "<group>"; };
 		FDA5CBC31CD5DBC600E19793 /* TDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextViewController.h; sourceTree = "<group>"; };
@@ -201,6 +213,12 @@
 			isa = PBXGroup;
 			children = (
 				FD8EDF971CD60814000AAD6F /* Base View Controller */,
+				FD8EDFA41CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.h */,
+				FD8EDFA51CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.m */,
+				FD8EDFA71CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.h */,
+				FD8EDFA81CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.m */,
+				FD8EDFAA1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.h */,
+				FD8EDFAB1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.m */,
 			);
 			name = "Search Controllers";
 			sourceTree = "<group>";
@@ -210,6 +228,8 @@
 			children = (
 				FD8EDF9E1CD61033000AAD6F /* TDSearchControllerBaseViewController.h */,
 				FD8EDF9F1CD61033000AAD6F /* TDSearchControllerBaseViewController.m */,
+				FD8EDFA11CD62FFF000AAD6F /* TDSearchResultsViewController.h */,
+				FD8EDFA21CD62FFF000AAD6F /* TDSearchResultsViewController.m */,
 			);
 			name = "Base View Controller";
 			sourceTree = "<group>";
@@ -310,7 +330,9 @@
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
 				FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */,
+				FD8EDFAC1CD638D9000AAD6F /* TDSearchShowResultsInSourceViewController.m in Sources */,
 				FD3791BF1CC3CE29009B066C /* AppDelegate.m in Sources */,
+				FD8EDFA61CD631EC000AAD6F /* TDSearchBarEmbeddedInNavigationBarViewController.m in Sources */,
 				FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */,
 				FD86B6E31CCD22CF005CE891 /* TDImageViewController.m in Sources */,
 				FD86B6E61CCD2BD9005CE891 /* TDPageControlViewController.m in Sources */,
@@ -318,8 +340,10 @@
 				FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */,
 				FD86B6E01CCCBB73005CE891 /* TDDatePickerViewController.m in Sources */,
 				FD8EDF9D1CD60B43000AAD6F /* TDCustomSearchBarViewController.m in Sources */,
+				FD8EDFA91CD634D1000AAD6F /* TDSearchPresentOverNavigationBarViewController.m in Sources */,
 				FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */,
 				FD3791BC1CC3CE29009B066C /* main.m in Sources */,
+				FD8EDFA31CD62FFF000AAD6F /* TDSearchResultsViewController.m in Sources */,
 				FD4E421C1CD109F700BF27CD /* TDSteppersViewController.m in Sources */,
 				FD3791D31CC3D7E4009B066C /* TDActivityIndicatorsViewController.m in Sources */,
 			);
