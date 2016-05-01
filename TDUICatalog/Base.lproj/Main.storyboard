@@ -465,6 +465,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Wi8-15-wfI" kind="showDetail" id="Zoq-Zg-eq1"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="MUQ-iW-6m8" style="IBUITableViewCellStyleDefault" id="fgn-7V-7T9">
                                         <rect key="frame" x="0.0" y="812" width="600" height="44"/>
@@ -2103,6 +2106,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GD-xF-s2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2359" y="448"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="NjJ-AW-NYy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="Wi8-15-wfI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1f-AH-XIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4434.5" y="-388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dvs-Zb-sYG">
