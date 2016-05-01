@@ -6,6 +6,10 @@
 //  Copyright © 2016 thanksdanny. All rights reserved.
 //
 
+
+
+//这里有个delegate的问题，用了第一个configure来区分
+
 #import "TDTextFieldsViewController.h"
 #import "UIColor+TDApplicationSpecific.h"
 
@@ -51,9 +55,12 @@
 #pragma mark - Configuration
 
 - (void)configureTextField {
+    // 这行添加后，就能实现delegate，为什么实例代码没实现delegate都能实现键盘收起的监控？
+    self.defaultTextField.delegate = self;
+    
     self.defaultTextField.placeholder = NSLocalizedString(@"Placeholder text", nil);
     self.defaultTextField.autocorrectionType = UITextAutocorrectionTypeYes;
-    self.defaultTextField.returnKeyType = UIReturnKeyGo; // demo里写done，换个go试试
+    self.defaultTextField.returnKeyType = UIReturnKeyDone;
     self.defaultTextField.clearButtonMode = UITextFieldViewModeNever; // 这个是什么鬼
 }
 
