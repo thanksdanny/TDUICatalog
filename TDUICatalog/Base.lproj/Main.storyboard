@@ -418,6 +418,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Scg-Rm-qpD" kind="showDetail" id="9lP-35-eto"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ZO3-ld-0fq" detailTextLabel="rLL-GK-cuA" style="IBUITableViewCellStyleSubtitle" id="3TB-bg-LHb">
                                         <rect key="frame" x="0.0" y="724" width="600" height="44"/>
@@ -2014,7 +2017,53 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gxa-my-zZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4987" y="-2049"/>
+            <point key="canvasLocation" x="-2771" y="-2105"/>
+        </scene>
+        <!--Text View-->
+        <scene sceneID="qDt-Bs-g5e">
+            <objects>
+                <viewController id="s7I-xh-n8K" customClass="TDTextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ymU-Qn-QVJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oL1-Wi-vh0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BGT-JG-sib">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="twv-w4-STm">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This is a UITextView that uses attributed text. You can programmatically modify the display of the text by making it bold, highlighted, underlined, tinted, and more. These attributes are defined in NSAttributedString.h. You can even embed attachments in an NSAttributedString!
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="twv-w4-STm" firstAttribute="leading" secondItem="BGT-JG-sib" secondAttribute="leading" id="AnM-ic-0cJ"/>
+                            <constraint firstItem="twv-w4-STm" firstAttribute="top" secondItem="ymU-Qn-QVJ" secondAttribute="bottom" id="Hsr-5o-vYu"/>
+                            <constraint firstItem="oL1-Wi-vh0" firstAttribute="top" secondItem="twv-w4-STm" secondAttribute="bottom" id="jYK-Ac-bWc"/>
+                            <constraint firstAttribute="trailing" secondItem="twv-w4-STm" secondAttribute="trailing" id="mMr-DL-zhG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text View" id="5Cd-q5-cWc"/>
+                    <connections>
+                        <outlet property="textView" destination="twv-w4-STm" id="l1b-2t-0ov"/>
+                        <outlet property="textViewBottomLayoutGuideConstraint" destination="jYK-Ac-bWc" id="MjW-1A-kqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBt-mc-zNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2771" y="-1352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rax-CN-yzo">
@@ -2104,7 +2153,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yte-YC-nkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5705" y="-2049"/>
+            <point key="canvasLocation" x="-3489" y="-2105"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OJD-rT-mZZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Scg-Rm-qpD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CJN-BJ-P2G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s7I-xh-n8K" kind="relationship" relationship="rootViewController" id="7j7-uF-u8L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56G-fq-iXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3489" y="-1352"/>
         </scene>
     </scenes>
 </document>
