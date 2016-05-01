@@ -25,9 +25,11 @@
 		FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EB1CCF34ED005CE891 /* TDProgressViewController.m */; };
 		FD86B6EF1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */; };
 		FD86B6F21CD101E3005CE891 /* TDSlidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */; };
+		FD8EDF9A1CD60844000AAD6F /* TDDefaultSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */; };
 		FDA5CBC21CD4B07C00E19793 /* TDTextFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */; };
 		FDA5CBC51CD5DBC600E19793 /* TDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */; };
 		FDA5CBC81CD5F21100E19793 /* TDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */; };
+		FDA5CBCC1CD5FBDB00E19793 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA5CBCB1CD5FBDB00E19793 /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,12 +68,15 @@
 		FD86B6EE1CCF8AA4005CE891 /* TDSegmentedControllsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSegmentedControllsViewController.m; sourceTree = "<group>"; };
 		FD86B6F01CD101E3005CE891 /* TDSlidersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSlidersViewController.h; sourceTree = "<group>"; };
 		FD86B6F11CD101E3005CE891 /* TDSlidersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSlidersViewController.m; sourceTree = "<group>"; };
+		FD8EDF981CD60844000AAD6F /* TDDefaultSearchBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDefaultSearchBarViewController.h; sourceTree = "<group>"; };
+		FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDefaultSearchBarViewController.m; sourceTree = "<group>"; };
 		FDA5CBC01CD4B07C00E19793 /* TDTextFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextFieldsViewController.h; sourceTree = "<group>"; };
 		FDA5CBC11CD4B07C00E19793 /* TDTextFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextFieldsViewController.m; sourceTree = "<group>"; };
 		FDA5CBC31CD5DBC600E19793 /* TDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTextViewController.h; sourceTree = "<group>"; };
 		FDA5CBC41CD5DBC600E19793 /* TDTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTextViewController.m; sourceTree = "<group>"; };
 		FDA5CBC61CD5F21100E19793 /* TDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDWebViewController.h; sourceTree = "<group>"; };
 		FDA5CBC71CD5F21100E19793 /* TDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDWebViewController.m; sourceTree = "<group>"; };
+		FDA5CBCB1CD5FBDB00E19793 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				FD3791D41CC3D7F3009B066C /* VIewController */,
+				FDA5CBC91CD5FB5100E19793 /* Search */,
+				FDA5CBCA1CD5FB6A00E19793 /* Toolbar View Controllers */,
 				FD86B6D91CCCAAEA005CE891 /* Assets.xcassets */,
 				FD3791D51CC3DC9A009B066C /* Application */,
-				FD3791C31CC3CE29009B066C /* Main.storyboard */,
 				FD3791BA1CC3CE29009B066C /* Supporting Files */,
 			);
 			path = TDUICatalog;
@@ -166,10 +172,52 @@
 				FD3791BE1CC3CE29009B066C /* AppDelegate.m */,
 				FD3791BB1CC3CE29009B066C /* main.m */,
 				FD3791C81CC3CE29009B066C /* LaunchScreen.storyboard */,
+				FD3791C31CC3CE29009B066C /* Main.storyboard */,
+				FDA5CBCB1CD5FBDB00E19793 /* Search.storyboard */,
 				FD3791DC1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.h */,
 				FD3791DD1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		FD8EDF951CD607EC000AAD6F /* Search Bar */ = {
+			isa = PBXGroup;
+			children = (
+				FD8EDF981CD60844000AAD6F /* TDDefaultSearchBarViewController.h */,
+				FD8EDF991CD60844000AAD6F /* TDDefaultSearchBarViewController.m */,
+			);
+			name = "Search Bar";
+			sourceTree = "<group>";
+		};
+		FD8EDF961CD607F9000AAD6F /* Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD8EDF971CD60814000AAD6F /* Base View Controller */,
+			);
+			name = "Search Controllers";
+			sourceTree = "<group>";
+		};
+		FD8EDF971CD60814000AAD6F /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		FDA5CBC91CD5FB5100E19793 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FD8EDF951CD607EC000AAD6F /* Search Bar */,
+				FD8EDF961CD607F9000AAD6F /* Search Controllers */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		FDA5CBCA1CD5FB6A00E19793 /* Toolbar View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Toolbar View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +279,7 @@
 			files = (
 				FD3791CA1CC3CE29009B066C /* LaunchScreen.storyboard in Resources */,
 				FD86B6DA1CCCAAEA005CE891 /* Assets.xcassets in Resources */,
+				FDA5CBCC1CD5FBDB00E19793 /* Search.storyboard in Resources */,
 				FD3791C51CC3CE29009B066C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +295,7 @@
 				FD86B6EC1CCF34ED005CE891 /* TDProgressViewController.m in Sources */,
 				FDA5CBC51CD5DBC600E19793 /* TDTextViewController.m in Sources */,
 				FD86B6E91CCE4E93005CE891 /* TDPickerViewController.m in Sources */,
+				FD8EDF9A1CD60844000AAD6F /* TDDefaultSearchBarViewController.m in Sources */,
 				FD3791DE1CC3E3C4009B066C /* UIColor+TDApplicationSpecific.m in Sources */,
 				FD3791E51CC4B139009B066C /* TDAlertControllersViewController.m in Sources */,
 				FD86B6D71CCCA1B5005CE891 /* TDButtonsViewController.m in Sources */,
